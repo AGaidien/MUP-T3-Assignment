@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="flex justify-center">
+    <div class="w-7xl flex flex-col">
+      <header class="p-2 bg-[var(--Primary)]">
+        <nav class="flex justify-between ">
+          <a href="index.html" class="text-4xl font-bold text-orange-50">FOODY</a>
+          <div class="text-2xl text-orange-50 font-semibold">
+            <a href="index.html" class="p-8">Home</a>
+            <a href="services.html" class="p-8">Services</a>
+            <a href="booking.html" class="p-8">Booking</a>
+            <a href="about.html" class="p-8">About Us</a>
+          </div>
+          <a href="booking.html" class="p-1 rounded-md bg-[var(--BTN-Primary)] text-2xl text-orange-50">Book Now</a>
+        </nav>
+      </header>
+
+      <main class="flex flex-col">
+        <section class="p-8">
+          <h1 class="text-4xl font-bold">Plan your next evening with us.</h1>
+        </section>
+
+        <section class="p-8">
+          <form class="grid grid-cols-2 gap-6 border-3 border-orange-500 rounded-xl p-8">
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-xl font-semibold">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" class="border-2 border-orange-500 rounded-md p-3 text-lg" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="email" class="text-xl font-semibold">Email address</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" class="border-2 border-orange-500 rounded-md p-3 text-lg" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="date" class="text-xl font-semibold">Date</label>
+              <input id="date" name="date" type="date" class="border-2 border-orange-500 rounded-md p-3 text-lg" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="time" class="text-xl font-semibold">Time</label>
+              <input id="time" name="time" type="time" class="border-2 border-orange-500 rounded-md p-3 text-lg" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="guests" class="text-xl font-semibold">Guests</label>
+              <select id="guests" name="guests" class="border-2 border-orange-500 rounded-md p-3 text-lg">
+                <option>2 guests</option>
+                <option>4 guests</option>
+                <option>6 guests</option>
+                <option>8+ guests</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="occasion" class="text-xl font-semibold">Occasion</label>
+              <input id="occasion" name="occasion" type="text" placeholder="Birthday, anniversary, dinner meeting" class="border-2 border-orange-500 rounded-md p-3 text-lg" />
+            </div>
+            <div class="col-span-2 flex flex-col gap-2">
+              <label for="notes" class="text-xl font-semibold">Special requests</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Dietary requirements, seating preferences, or celebration notes" class="border-2 border-orange-500 rounded-md p-3 text-lg"></textarea>
+            </div>
+            <button type="submit" class="col-span-2 justify-self-start p-4 bg-[var(--BTN-Primary)] text-2xl text-orange-50 rounded-md">Confirm reservation</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="bg-[var(--Primary)]">
+        <p class="text-orange-50 text-center p-20">FOODY</p>
+      </footer>
+    </div>
+  </body>
+</html>
